@@ -29,3 +29,11 @@ var s1 = "a";
 var s2 = "b";
 var n3 = n1 + n2;
 var s3 = s1 + s2;
+
+// for loops
+
+for ( var pizel of img.values() ) {
+    var newG = 255 - pixel.getGreen();
+    pixel.setGreen(newG);
+}
+
