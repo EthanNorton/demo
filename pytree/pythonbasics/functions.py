@@ -17,6 +17,7 @@ medals['bronze'] = 0
 medals['bronze'] = medals['bronze'] + 12
 
 nummedals = len(medals)
+nummedals = len(medals)
 
 
 for key in medals.keys():
