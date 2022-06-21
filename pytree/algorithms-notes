@@ -1,0 +1,27 @@
+# FibRecurs(n)
+from re import A
+
+
+n = input("Please input integer:")
+if n <= 1:
+    return n
+else:
+    return FibRecurs(n-1) + FibRecurs(n-2)
+
+# example 2
+
+fibonacci_numbers = [0, 1]
+for i in xrange(2,700):
+    fibonacci_numbers.append(fibonacci_numbers[i-1]+fibonacci_numbers[i-2])
+return fibonacci_numbers
+
+# example 3
+
+a = int(input("Please input integer a"))
+b = int(input("Please input integer b"))
+if b = 0:
+    return a 
+a' = a/b %
+    return a'
+gcdab = a'
+print("the gcd of a and b is", gcdab)
