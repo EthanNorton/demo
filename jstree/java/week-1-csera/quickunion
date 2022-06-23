@@ -1,0 +1,3 @@
+// quick union is the lazy approach
+// the root of i is id[id[id[...]]] recursively
+
