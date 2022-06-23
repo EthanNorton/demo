@@ -1,0 +1,13 @@
+// this offers improvements (avoids tall trees)
+
+//some basic codings
+return root(p) == root(q); //this is a find operation
+// find takes time complexity proportional to depth(lg N)
+
+//quick-union
+
+int i = root(p);
+int j = root(q);
+if (i ==j) return;
+if (sz[i]) < sz[j] {id[i] = j; sz[j] += sz[i]; }
+else               {id[j] = i; sz[i] += sz[j]; }
