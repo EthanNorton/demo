@@ -1,0 +1,12 @@
+// stacks
+
+public static void MediaDeviceInfo(String[] args)
+{
+    StackOfStrings stack = new StackOfStrings();
+    while (!StdIn.IsEmpty())
+    {
+        String s = StdIn.readstring();
+        if (s.equals("-")) StdOut.print(stack.pop());
+        else               stack.push(s);               
+    }
+}
