@@ -1,0 +1,53 @@
+
+# feature engineering 
+
+def square(x):
+    y = x * x
+    return y
+result = square(10)
+print(result)
+
+a = 2
+b = 3 
+result = greater_than(a, b)
+print("{} is greater than {}: {}".format( a, b, result))
+
+# docstring feature engineering
+
+def greater_than(x, y):
+    if x > y:
+        return True
+    else:
+        return False
+
+# get factors
+
+def get_factors(x):
+    factors = []
+    
+    for i in range(1, x + 1): # gets the range of the factors withing the list
+        if (x % i == 0):
+            factors.append(i)
+            
+    return factors
+
+print(get_factors(21))
+
+## unique factors
+
+def unique_list(l):
+x = []
+for a in l:
+    if a not in x:
+     x.append(a)  
+     
+    return x
+
+print(unique_list(1,2,3,3,3,3,3,4,5))
+
+
+
+
+    
+
+
