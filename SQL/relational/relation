@@ -1,0 +1,1 @@
+AUTHOR(Author_ID: char, lastname: varchar, firstname: varchar, email: varchar)
