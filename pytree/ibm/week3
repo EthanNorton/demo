@@ -19,4 +19,24 @@ for i in range(0,5):
 squares = ["red", "yellow", "green"]
 for square in squares:
     square
+
+# generalized iteration
+squares = ["red", "yellow", "green"]
+
+for i,square in enumerate(squares):
+square
+i
+
+# while loops
+
+squares = ['orange', 'orange','purple,', 'orange','blue']
+Newsqaures=[]
+i=0
+while(squares[i]=='orange'):
+    Newsquares.append(squares[i])
+    i=i+1
+
+
+
+
     

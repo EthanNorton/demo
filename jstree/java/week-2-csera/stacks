@@ -10,3 +10,74 @@ public static void MediaDeviceInfo(String[] args)
         else               stack.push(s);               
     }
 }
+
+//  more stacks
+
+public class LinkedStackOfStrings
+{
+    private Node first = null;
+    private class Node #private indicates an inner class .. what does this mean?
+    {
+        String item;
+        Node next;
+    }
+    public boolean isEmpty()
+   {     return first == null; }
+   public void push(String item)
+   {
+    Node oldfirst = first;
+    first = new Node();
+    first.item = item;
+    first.next = oldfirst;
+   }
+
+   public String pop()
+   {
+    String item = first.item;
+    first = first.next;
+    return item;
+   }
+}
+
+public class FixedCapacityStackOfStrings
+{
+    private String[] s;
+    private int N = 0;
+
+    public FixedCapacityStackOfStrings(int capacity)
+    {  s = new String[capacity];  }
+
+    public boolean isEmpty()
+    {  return N ==0;  }
+
+    public void push(String item)
+    {  s[N++] = item;  }
+
+    public String pop()
+    {  return s [--N];  }
+}
+
+// nulling items in stacks
+
+public String pop()
+{  return s[--N];  }
+
+
+// array growth
+
+public ResizingArrayStackOfStrings()
+{  s = new String[1];   }
+
+public void push(String item)
+{
+        if (N ==s.length) resize(2 * s.length);
+        s[N++] = item;
+}
+
+private void resize(int capacity)
+{
+    String[] copy = new String[capacity];
+    for (int i = 0); i < N; i++)
+        copy[i] = s[i];
+    s = copy;
+}
