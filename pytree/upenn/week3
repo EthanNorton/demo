@@ -1,0 +1,27 @@
+# lists
+
+list1 = ['1', 'dog', 'cat' , 789]
+list1.append("hello")
+['1', 'dog', 'cat', 789, 'hello']
+print(len(list1))
+
+list1.pop()
+print(list1)
+list1.pop(1)
+print(list1)
+
+# adding lists
+ls1 = [2,3,4]
+ls2 = [7,8,9]
+ls3 = ls1 + ls2
+print(ls3)
+
+# slicing lists
+
+my_list = ['b', 'a', 'n', 'a', 'n', 'a', 's']
+
+print(my_list[2:5]) #contains elements 3-5
+
+print(my_list[4:]) #elements 5 to end.
+
+

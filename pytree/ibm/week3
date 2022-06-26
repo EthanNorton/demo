@@ -1,0 +1,22 @@
+# loops
+
+range(N)
+[0,..N-1]
+
+#example 1
+range(3)
+[0,1,2]
+
+#example 2
+range(10,15)
+[10,11,12,13,14]
+
+#loops
+
+for i in range(0,5):
+    squares[i] = "white" #this will iterate per ith square
+
+squares = ["red", "yellow", "green"]
+for square in squares:
+    square
+    
