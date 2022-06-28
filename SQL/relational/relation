@@ -1,1 +1,54 @@
 AUTHOR(Author_ID: char, lastname: varchar, firstname: varchar, email: varchar)
+
+/* alter and drop  */
+
+ALTER TABLE <table_name>
+    ADD COLUMN <column_name_1> datatype
+    . . .
+    ADD COLUMN <column_name_n> datatype;
+
+ /* example  */
+    ALTER TABLE author
+        ADD COLUMN telephone_number BIGINT;
+
+    DROP TABLE  <table_name>;
+
+    DROP TABLE author;
+
+    TRUNCATE TABLE <table_name>
+        IMMEDIATE;
+    
+    /* example 2  */
+    INSERT INTO authors (author_id, lastname, firstname, email, city, country)
+        VALUES
+            (1001, 'Thomas', 'John', johnt@...)
+  /* example 3 */
+
+  CREATE TABLE copy(
+    copy_id INT NOT NULL,
+    book_id INT NULL,
+    . . .
+    CONSTRAINT fk_copy_book FOREIGN KEY(book_id)
+    REFERENCES book(book_id)
+    ON DELETE CASCADE);
+
+  /* example 4 */
+    SELECT title FROM book WHERE book_id = 250;
+
+  /* creating an index */
+
+  CREATE TABLE book(
+    . . .
+    PRIMARY KEY(book_id));
+
+  /* MySQL has been downloaded */
+
+  CREATE DATABASE employees;
+  USE employees;
+  CREATE TABLE employee_details (firstname VARCHAR(20),
+  lastname VARCHAR(20), startdate DATE, salary DECIMAL);
+
+  
+
+
+
