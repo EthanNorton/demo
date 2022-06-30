@@ -233,3 +233,121 @@ private class ListIterator implements Iterator<Item>
     }
 }
 
+//more
+
+public class Experiment
+{
+    public static void main(String[] args)
+    {
+        int N = Integer.parseInt(args[0]);
+        Double[] a = new Double[N];
+        for (int i = 0; i < N; i++)
+            a[i] = StdRandom.uniform();
+        Insertion.sort(a);
+        for (int i = 0; i < N; i++)
+            StdOut.println(a[i]);
+    }
+}
+
+// sorting more files
+
+import java.io.File;
+public class FileSorter
+{
+    public static void main(String [] args)
+    {
+        File directory = new File(args[0]);
+        File[] files = directory.listFiles();
+        Insertion.sort(files);
+        Insertion.sort(files);
+        for (int i = 0; i < files.length; i++)
+            StdOut.println(files[i].getName());
+        
+    }
+}
+
+// clientside
+
+import java.io.File;
+public class FileSorter
+{
+    public static void main (string[] args)
+    {
+        File directory = new File(args[0]);
+        File[] files = directory.listFiles();
+        Insertion.sort(files);
+        for (int i  0; i < files.length; i++)
+            StdOut.println(files[i].getName());
+    }
+}
+
+// interface
+
+public interface Comparable<Item>
+{
+    public int compareTo(Item that);
+}
+
+//object implement class file
+
+implements Comparable<File>
+{
+    ...
+    public int compareTo(File b)
+    {
+        ...
+        return -1;
+        ...
+        return +1;
+        ...
+        return 0;
+    }
+}
+
+// sort implementation
+
+public static void sort(Comparable[] a)
+{
+    int N = a.length;
+    for (int i = 0; i < N; i++)
+        for (int j = i; j > 0; j--)
+}
+
+// due data type
+
+public class Date implements Comparable<Date>
+{
+    private final int month, day, year;
+
+    public Date(int m, int d, int y)
+    {
+        month = m
+        day = d;
+        year = y;
+    }
+
+    public int compareTo(Date that)
+
+    {
+        if (this.year < that.year ) return -1;
+        if (this.month > that.month ) return +1;
+        if (this.month < that.month) return -1;
+        if (this.year > that.year ) return +1;
+        if (this.day < that.day ) return -1;
+        if (this.day> that.day ) return +1;
+
+    }
+}
+
+// helper functions with less
+
+private static boolean less(comparable v, Comparable w)
+{  return v. compareTo(w) < 0;  }
+
+
+
+
+
+
+
+

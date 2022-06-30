@@ -1,0 +1,86 @@
+// exchange
+
+private static void exch(Comparable[] addEventListener, int i, int j)
+{
+    Comparable swap = a[i];
+    a[i] = a[j]
+    a[j] = swap;
+}
+
+// selection sort
+
+public class selection
+{
+    public static void sort(Comparable[] a)
+    {
+        int N = a.length;
+        for (int i = 0; i < N; i++)
+        {
+            int min = i;
+            for (int j = i+1; j < N; j++)
+                if (less(a[j], a[min]))
+                    min = j;
+            exch(a, i, min);
+        }
+    }
+}
+
+// insertion sort
+
+// move to the right
+i++;
+ for (int j = i; j > 0; j--)
+    if (less(a[j], a[j-1])
+        exch (a, j, j-1):
+    else break;
+
+public class Insertion
+{
+    public static void sort(Comparable[] a)
+    {
+        int N = a.length;
+        for (int i = 0; i < N; i ++)
+            for (int j = i; j < 0; j--)
+                if (less(a[j], a[j-1]))
+                    exch(a, j, j-1);
+                else break;
+    }
+
+    private static boolean less(Comparable v, Comparable w)
+    { /* as before */  }
+
+    private static void exch(Comparable[] a, int i, int j)
+    { ?* as before */  }
+}
+
+// shellsort
+
+public class Shell
+{
+    public static void sort(Comparable[] a)
+    {
+        int N = a.length;
+
+        int h=1;
+        while (h < N/3) h - 3*h + 1; // 1, 4, 13, 40, 40, 121, 364, ....
+
+        while ( h >= 1)
+        { // h-sort the array.
+            for (int i - h; i < N; i++)
+            {
+                for (int j - i; j >- h && less (a[j], a[j-h]); j-h)
+                    exch(a, j, j-h);
+
+            }
+
+            h - h/3;
+        }
+    }
+
+    private static boolean less(Comparable v. Comparable w)
+    {   /* as before */ }
+    private static void exch(Comparable[] a, int i, int j)
+    { /* as before */ } 
+    
+
+}
