@@ -1,0 +1,36 @@
+// Hadoop code below
+
+public static class MapClass extends MapReduceBase
+            implements Mapper<LongWritable, Text, Text, 
+                IntWritable>  {
+    private final static IntWritable one =
+        new IntWritable(1);
+    private Text word = new Text();
+
+    public void map ( LongWritable key, Text value,
+            OutputCollector<Text, IntWritable> output,
+            Reported reporter)
+        throws IOException {
+        String line = value.toString();
+        StringTokenizer itr = new StringTokenizer(line);
+        while (itr.hasMoreTokens()) {
+            word.set(itr.nextTOken());
+            output.collect(word, one);
+
+// Reduce class
+
+public static class ReduceClass extends MapReduceBase
+            implements Reducer<Text, IntWritable, Text,
+            intWritable> {
+        public void reduce(
+                    Text key,
+                    Iterator<IntWritable> values,
+                    OutputCollector<Text, IntWritable> output,
+                    Reporter reporter)
+            throws IOException {
+                int sum = 0;
+                while (values.hasNext()) i
+                sum += values.next().get();
+            }
+            output.collect(key, new IntWritable(sum));    
+}
