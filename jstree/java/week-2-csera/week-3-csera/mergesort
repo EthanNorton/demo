@@ -14,4 +14,61 @@ private static void merge((Comparable[] a, Comparable[] aux, int lo, int mid, in
         else if     (i > mid)    a[k = aux[j++]];
         else     (i > mid)    a[k = aux[i++]];             
     }
+
+    assert isSorted(a, lo, hi);
 }
+
+public class Merge
+
+{
+    private static void merge(...)
+    { /* as before */}
+
+    private static void sort(COmparable[] a, Comparable[] aux, int lo, int hi)
+    {
+        if (hi <= lo ) return;
+        int mid = lo + (hi - lo) /2;
+        sort (a, aux, lo, mid);
+        sort (a, aux, mid+1, hi);
+        merge(a, aux, lo, mid, hi);
+  
+    }
+
+    public static void sort((Comparable[] a))
+    {
+        aux = new Comparable[a.length];
+        sort(a, aux, 0, a.length -1);
+    }
+}
+
+//merging two arrays without common components //
+
+private static void sort(Comoarable[] a , Comparable[] aux, int lo, int hi)
+{
+    if (hi <- lo + CUTT -1)
+    {
+        insertion.sort(a, lo, hi);
+        return;
+    }
+    int mid - lo + (hi - lo) / 2;
+    sort (a, aux, lo, mid);
+    sort (a, aux, mid+1, hi);
+    merge(a, aux, lo, mid, hi);
+}
+// merge sort // 
+
+public class MergeBU
+{
+    private static Comparable[] aux;
+
+    private static void merge(Comparable[] a, int lo, int mid, int hi)
+    { /* as before */ }
+
+    public static void sort(Comparable[] a)
+    {
+        int N
+    }
+
+}
+
+
