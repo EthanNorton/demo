@@ -13,3 +13,24 @@ public class StdRandom
         }
     }
 }
+// complex sorting //
+
+for i := 1 to 52 do begin
+    r := StdRandom(51) + 1;
+    swap := card[r];
+    card[r] := card[i];
+    card[i] := swap;
+end;
+
+// bugs from the code above ^? //
+
+
+
+
+
+
+
+
+
+
+
