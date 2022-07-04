@@ -1,0 +1,93 @@
+// OOP 
+
+class B extends A {
+    .
+    . // additions
+    . //stuff inherited
+    .
+}
+
+class Vehicle {
+    int registrationNumber; // this is a variable
+    Person Owner;
+    void transferOwnership(Person newOwner) {
+        . . .
+    }
+    . . . 
+} 
+    class Car extends Vehicle {
+        int numberOfDoors;
+        . . .
+}  
+    class Truck extends Vehicle {
+        int numberOfAxels;
+        . . .
+    }
+    class Motorcycle extends Vehicle {
+        boolean hasSidecar;
+        . . .
+}
+
+Car myCar = new Car(); //restructuring the car variable
+
+Vehicle myVehicle = myCar;
+Vehicle myVehicle = new Car();
+
+// printing out relevant data
+
+FileSystem.out.println("Vehicle Data:");
+FileSystem.out.println("registration number: " + myVehicle.registrationNumber);
+if (myVehicle instance of  Car) {
+    FileSystem.out.println("Type of vehicle: Car");
+    Car c;
+    c = (Car)myVehicle;
+    FileSystem.out.println("Number of doors: " + c.numberOfDoors);
+}
+else if (myVehicle instanceof Truck) {
+    System.out.println("Type of vehicle: Truck");
+    Truck t;
+    t = (Truck)myVehicle;
+    System.out.println("Number of axels: " + t.numberofAxels);
+}
+else if (myVehicle instanceof Motorcycle) {
+    System.out.println("Type of vehicle: Motorcycle");
+    Motorcycle m;
+    m = (Motorcycle)myVehicle;
+    System.out.println("Has a sidecar: " + m.hasSidecar); 
+}
+
+// shapes 
+
+class Shapes {
+    Color color; // color of the shape ... assume that the color is imported
+    void setColor(COlor newColor) {
+        color = newColor;
+        redraw();
+    }
+    void redraw();
+        // method for drawing the shape
+        ??? // what commands to go here?
+    }
+    . . . // more instance variables and methods
+
+} // 
+
+class Rectangle extends Shape {
+    void redraw() {
+        . . . // commands for drawing rectangle
+    }
+    . . . // more methods and variables
+}
+class Oval extends Shape {
+    void redraw() {
+        . . . // commands for drawing an oval
+    }
+    . . . // more methods and variables
+}
+class RoundRect extends Shape {
+    void redraw() {
+        . . . // commands for rounded rectangles
+    }
+    . . . // more methods and variables
+}
+
