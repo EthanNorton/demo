@@ -1,0 +1,33 @@
+// typical hello world
+
+public class Hello
+{
+    public static void main ( String[] args )
+    }
+        System.out.pritnln("Hello world!");
+    }
+}
+
+public class Emily
+{
+    public static void main ( String[] args)
+    {
+        System.out.println("A bird came down the walk:");
+        System.out.println("He did not known I saw;");
+        System.out.println("He bit an angle-worm in halves");
+        System.out.println("And ate the fellow, raw.");
+
+    }
+}
+
+// another example
+
+public class Haiku
+{
+    public static void main ( String[] args )
+    {
+        System.out.println("On a withered branch")
+    }
+}
+
+// 
