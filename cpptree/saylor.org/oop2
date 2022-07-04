@@ -1,0 +1,38 @@
+// java class declaration
+
+public class Time {
+    private int hour; private int minute; private int second;
+    public Time()
+    public void setTime(int newHour, int newMinute, int newSecond)
+    public int[] getTime()
+    public void incrementTime()
+}
+
+public class Customer
+{
+    private String name;
+    private String address;
+    private String city;
+    private String state;
+    private String zipcode;
+    private double creditLimit; // these are the instance variables
+
+    public void setName(String n)
+    {
+        name = n;
+    }
+
+    public void setAddress (String addr)
+    {
+        address=addr; //setters
+    }
+    public String getName()
+    {
+        return name;
+    }
+
+    public String getAddress()
+    {
+        return address;
+    }
+}
