@@ -1,0 +1,93 @@
+// this is what the switch statement looks like
+
+switch ( expression )
+{
+    case label1;
+        statementList1;
+        break;
+
+    case label2;
+        statementList2;
+        break;
+    
+    case label3;
+        statementList3
+        break;
+    
+    default
+        defaultStatementList
+}
+
+double discount;
+
+char code = 'B' ;
+switch (code )
+{
+    Case 'A':
+    discount = 0.0;
+    break;
+
+    Case 'B':
+        discount = 0.1;
+        break;
+    
+    Case 'C':
+        discount = 0.2;
+        break;
+    
+    case 'C':
+        discount = 0.2;
+        break;
+    
+    default:
+        discount = 0.3;
+}
+
+System.out.println("discount is: " + discount );
+
+
+// flowchart
+
+double discount;
+// usually code would come from data char code = 'B';
+
+switch ( code )
+{
+    case 'A':
+        discount = 0.0
+        break;
+
+    case 'B':
+        discount = 0.1;
+        break;
+    
+    case 'C':
+        discount = 0.2;
+        break;
+    
+    default
+        discount = 0.3;
+    }
+
+System.out.println ("discount is: " discount );
+        
+}
+
+// switcher
+
+class Switcher
+{
+    public static void main ( String[] args )
+    {
+        char color = 'Y' ; 
+        String message = "Color is";
+
+        switch ( color )
+        {
+            case 'R':
+                message = message + " red" ;
+            // copy with other random colors
+        }
+    System.out.println ( message ) ; 
+    }
+}

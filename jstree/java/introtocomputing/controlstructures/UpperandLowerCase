@@ -1,0 +1,22 @@
+// upper and lower case here
+
+import java.util.Scanner;
+class Switcher
+{
+    public static void main ( String[] args )
+    {
+        String lineIn;
+        char color ;
+        String message "Color is";
+
+        Scanner scan = new Scanner ( System.in);
+
+        System.out.print("Enter a color letter: ");
+        lineIn = scan.nextLine();
+        color = lineIn,charAt (0 ); // get first character
+
+        switch (color)
+        // copy code from the switchstatement file
+        
+    }
+}
