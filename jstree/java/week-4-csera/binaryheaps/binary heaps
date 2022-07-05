@@ -1,0 +1,50 @@
+private void swim (int k)
+    while ( k > 1 && less (k/2, k))
+    {
+        exch(k, k/2);
+        k = k/2;
+    }
+
+    //  binary heaps
+
+    public void insert( key x)
+    {
+        pq[++N] = x;
+        swim(N);
+    }
+
+    //eliminating violation
+
+    private void sink (int k)
+    {
+        while (2*k <= N)
+        {
+            int j = 2*k
+            if (j < N && less (j, j+1)) j++;
+            if (!less(k,j)) break;
+            exch(k, j)
+            k = j;
+        }
+    }
+
+    public Key delMax()
+    {
+        Key max = pq[1];
+        exch (1, N--);
+        sink(1);
+        pq[N+1] = null;
+        return max;
+    }
+
+    public final class Vector {
+        private final int N;
+        private final double[] data;
+        public Vector(double[] data;
+        public Vector(doble[] data) {
+            this.N = data.length;
+            this.data = new double[N]
+            for (int i = 0; i < N; i++)
+                this.data[i] = data[i]
+        }
+        // more comments and stuff 
+    }
