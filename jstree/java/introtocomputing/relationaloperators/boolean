@@ -1,0 +1,7 @@
+if ( flour >= 4 && sugar >= 2 )
+    System.out.println("Enough for cookies!");
+else
+    System.out.println("sorry....");
+
+    // full system
+

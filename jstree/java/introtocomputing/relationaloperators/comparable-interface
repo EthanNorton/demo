@@ -1,0 +1,164 @@
+int compareTo ( T obj )
+// this is the basic of compare
+
+//putting a lot of it together
+
+class TestCompareTo
+{
+    public static void main ( String[] args )
+    }
+
+    String appleA = new String("apple");
+    String appleB = new String("apple");
+    String berry = new String("berry");
+    String cherry = new String("cherry");
+    String A; B;
+
+    A = AppleA; B = AppleB;
+    System.out.print(A + ".compareTo(" + B +") returns");
+    if ( A.compareTo(B) == 0) System.out.println("Zero");
+    if ( A.compareTo(B) < 0) System.out.println("Negative");
+    if ( A.compareTo(B) > 0) System.out.println("Positive");
+    System.out.println ( A + ".equals(" + B + ") is + A.equals(B) );
+    System.out.println;
+
+    A = appleA; B = berry
+    System.out.print ( A + ".compareTo(" + B + ") returns ");
+    if ( A.compareTo(B) == 0) System.out.pritnln("Zero");
+    if ( A.compareTo(B < 0) System.out.println("Negative");
+    if ( A.compareTo(B) > 0) System.out.println("Positive");
+    System.out.println ( A + ".equals(" + B +") is " A.equals(B) );
+    System.out.println();
+
+    A = berry; B = appleA;
+    System.out.print( A + ".compareTo(" + B + ") returns ");
+
+//static array
+
+import java.util.Arrays;
+
+class ArayDemoOne
+{
+    public static void main ( String[] args )
+    {
+        int[] scramble = {148, -23, 67, 110, -17, 44, 103, -12, -8, 91, -12, 43, 0, 9, 80, 34, 21, 44, 15, 11};
+        
+        System.out.print("Scrambled array:  ");
+        for ( int j=0; j < scramble.length, j++ )
+            System.out.print (scramble[j] + "  ");
+        
+        System.out.println();
+
+        Arrays.sort ( scramble );
+
+        System.out.print("Sorted arrray: );
+        for ( int j = 0; j < scramble.length; j++ )
+            System.out.println();    
+    }
+}
+
+import java.util.Arrays;
+
+class ArrayDemoTWo
+{
+    public static void main ( String[] args )
+    {
+        String[] animals = {"bat, "fox", "gnu", "eel", "ant", "dog", "fox", "gnat" };
+    }
+}
+
+class Entry implements Comparable <Entry>
+{
+    private String word;
+    private String definition;
+
+    public Entry ( String word, Sring definition )
+{
+    this.word = word;
+    this.definition = definition;
+}
+
+    public String getWord()
+    {
+        return word;
+    }
+
+public String get definition
+    {
+        return definition;
+    }
+
+public String toString()
+{
+    return getWord() + "\t" + getDefinition();
+}
+
+    public int compareTo ( Entry other )
+{
+    return { }
+}
+        } // a typo was made here with the indenting.
+
+
+// importing arrays
+
+import java.util.arrays
+
+class Entry implements Comparable<Entry>
+{
+    . . .
+}
+
+Class EntryTester
+{
+    public static void main ( String[] args )
+    {
+        Entry[] wordList = new Entry[10];
+    
+        wordList[0] = new Entry ( "WWW", "World Wide Web" );
+        wordList[1] = new Entry ( "HTTP" , "Hypertext Transport Protocol" );
+        wordList[2] = new Entry ( "DNS", "Domain Name System" );
+        // ... continue to store key-value pair within an array.
+
+        Arrays.sort ( wordList );
+
+        for ( int j=0; j<wordList.length; j++ ) 
+            System.out.println ( wordList[j].toString() );
+    }
+}
+
+// updates
+
+class Monster implements 
+{
+    private int hitpoints, stength, age;
+    private String name; 
+}
+    public Monster ( int hp, int str, int age, String nm )
+    {
+        hitPoints = hp; strength = str; this.age = age; name = nm;
+    }
+    public int getHitPoints() { return hitPoints; }
+
+    public int getStrength() { return strength; }
+
+    public int getAge() { return age; }
+
+    public String getName() { return name; }
+
+    public String getName() { return name; }
+
+    public String toString()
+    {
+        return "HP: " + getHitPoints() " \tStr: " + getStrength() + "\t" + getName();
+    }
+
+    public int compareTo( )
+    {
+       // .... more goes here ...
+    }
+}
+
+
+        
+

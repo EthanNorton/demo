@@ -1,0 +1,21 @@
+// implementing compareTo()
+
+class Monster implements Comparable<Monster>
+{
+    ...
+
+    public int compareTo ( Monster other )
+    {
+        // more should go here
+    }
+}
+
+public int compareTo ( Monster other )
+{
+    int hitDifference = getHitPoints()-other.getHitPoints();
+
+    if ( hitdifference != 0 ) 
+        return hitDifference;
+    else
+        return getStrength()-other.getStrength();
+}

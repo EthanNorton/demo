@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class RainTester
+{
+    public static void main (String[] args)
+    {
+        Scanner scan = new Scanner ( System.in );
+        String answer;
+
+        System.out.print("Is it raining? (Y or N): ");
+        answer = scan.nextLine();
+
+        if ( answer.equals("Y"))
+            System.out.println("Wipers On");
+        else
+            System.out.println("Wipers off");
+
+    }
+}
+
+import java.util.scanner;
+public class NumberTester
+{
+    public static void main (String[] args)
+    {
+        Scanner scan = new Scanner ( System.in );
+        int num;
+
+        Systemout.println("Enter an integer");
+        num = scan.nextInt();
+
+        if ( num < 0)
+            System.out.println("The number" + num + "is negative");
+        else
+            System.out.println("The number " + num + " is zero or positive");
+
+        System.out.println("Good-bye for now");
+    }
+}
+double value = -34.569;
+double abs;
+
+abs = (value < 0) ? -value : value ;
