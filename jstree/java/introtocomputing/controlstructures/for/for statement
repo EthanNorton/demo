@@ -1,0 +1,6 @@
+for ( initialize ; test ; change )
+    loopbody ;
+
+for ( count = 0; count < 10; count++ ) // count++ is the same as count + 1
+    System.out.print ( count + " ");
+

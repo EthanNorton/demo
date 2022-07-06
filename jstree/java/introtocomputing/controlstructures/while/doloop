@@ -41,5 +41,53 @@ public class SqrtCalc
     }
 }
 
-// more complex code
+// more complex code 
 
+import java.io.* ; 
+
+public class SqrtCalc
+{
+    public static void main( String[] args )
+    {
+        String chars;
+        double x;
+        Scanner scan = new Scanner(System.in );
+
+        for ( chars = "yes"; )
+        {
+            System.out.print("Enter a number-->");
+            x = scan.nextDouble();
+            chars = scan.nextLine();
+            System.out.println("Square root of " + x +" is " + Math.sqrt( x ) );
+            System.out.print("Do you wish to continue? (yes or no) --> ");
+            chars = scan.nextLine();
+        }
+    }
+}
+
+// introducting the OR operator " || "
+
+import java.util.Scanner;
+
+public class SqrtCalc
+{
+    public static void main ( Strin[] args )
+    {
+        String chars;
+        double x;
+        Scanner scan = new Scanner(System.in );
+
+        chars = "yes";
+
+        while ( chars.equals ( "yes" || chars.equals ( "YES" ) || char.equals( "y" ) || chars.equals ("Y") ) //this part removes case sensitivity
+        {
+            System.out.print("Enter a number-->");
+            x = scan.nextDouble();
+            chars = scan.nextLine();
+            System.out.print("Square root of " + x + " is " + Math.sqrt( x ) );
+            System.out.print("Do you wish to continue? (yes or no) --> ");
+            chars = scan.nextLine();
+        }
+        
+    }
+}
