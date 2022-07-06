@@ -1,0 +1,45 @@
+int count = 0; // sets the count to 0.
+
+do
+{
+    System.out.println( count ); //loops the body to include code
+    count++; // change the count 
+}
+while ( count < 10 ); //test the loop body and see if should be executed again
+
+// another example
+
+int count = 1000;
+{
+    system.out.println( count );
+    count++ ;
+}
+while ( count < 10 );
+
+
+// complex code i do not understand below
+
+import java.util.Scanner;
+public class SqrtCalc
+{
+    public static void main ( String[] args )
+    {
+        String chars;
+        double x;
+        Scanner scan = new Scanner(system.in );
+
+        chars = "yes"; / this enables the first iteration of the loop
+        
+        while (chars.equals ( "yes") )
+        {
+            system.out.println("Enter a number--> ");
+            x = scan.nextDouble();
+            chars = scan.nextLine();
+            System.out.println("Square root of " + x + " is " + Math.sqrt ( x ) );
+            chars = scan.nextLine();
+        }
+    }
+}
+
+// more complex code
+
