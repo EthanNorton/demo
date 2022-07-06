@@ -27,5 +27,77 @@ for ( count = 0; count <= 5; count ++ )
 System.out.println ( "\nsum is: " + sum );
 }
 
-// top-driven loop 
+// top-driven loop (equivalent for and while loops)
 
+// for loop
+int count, sum;
+sum = 0; 
+for ( count = 0; count <= 5)
+{
+    sum = sum + count;
+    System.out.println(count + " ");
+}
+
+System.out.println( " sum is: " + sum );
+
+//while loop
+int count; sum;
+
+sum = 0;
+count = 0;
+
+while ( count <= 5 )
+
+{
+    sum = sum + count ;
+    System.out.print ( count + " ");
+    count++ ; 
+}
+
+System.out.println( " sum is: " + sum );
+
+// active for loop
+
+int count; 
+
+for ( count = 0; count < 7; count ++)
+{
+    System.out.println( " count is: " + count);
+}
+System.out.pritntln ("Done with the loop" );
+
+// counting by threes ... can be used for neural nets
+
+System.out.println( " \nDone with the loop. \nCount is now" + count);
+    int count;
+
+    for ( count = 0; count <= 12; count += 3 )
+    {
+        System.out.println( "count is: " count );
+    }
+
+// incrementing by a variable
+
+int count;
+int inc; 
+
+// ... get inc from the user ... /
+
+for ( count = 0; count < 21; count = count + inc )
+{
+    System.out.println( " Count is: " + count);
+}
+System.out.println( " \nDone with the loop. \nCount is now" + count);
+
+
+// counting down 
+for ( initialize ; test ; change)
+    loopBody ; 
+
+    int count;
+
+    for ( count = 10; count >= 0; count-- )
+    {
+        System.out.println ( "count is: " + count );
+    }
+    System.out.println( "\nDOne with the loop. ")
