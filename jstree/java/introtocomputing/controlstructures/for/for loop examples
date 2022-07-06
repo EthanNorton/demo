@@ -1,0 +1,31 @@
+// setting up the for loop
+
+for ( count = 0; count < 10; count++  )
+    FileSystem.out.print( count + " ");
+
+    count = 0; //initalize
+    while ( count < 10) // test
+    {
+        System.out.print ( count + " ");
+        count++; // change 
+    }
+
+    // any kind of loop is listed here
+for ( count = 0; count < 10, count++ )
+    System.out.print( count+ " ");
+
+// for loop for in the loop body ... any kind of loop
+
+int count, sum;
+
+sum = 0;
+for ( count = 0; count <= 5; count ++ )
+{
+    sum = sum + count ; 
+    System.out.print( count + " ");
+}
+System.out.println ( "\nsum is: " + sum );
+}
+
+// top-driven loop 
+

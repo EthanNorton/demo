@@ -1,0 +1,30 @@
+// basic heapsort
+
+for (int k = N/2; k>= 1; k--)
+    sink(a, k, N);
+
+while ( N > 1)
+{
+    exch(a, 1, N--);
+    sink(a, 1, N);
+}
+
+// creating a heap class
+
+public class Heap
+{
+    public static void sort(Comparable[] pq)
+    {
+        int N = pq.length
+        for ( int k = N/2; k >= 1; k--)
+            sink(pq, k, N);
+    }
+}
+
+private static void sink(Comparable[] pq, int k, int N)
+
+private static boolean less(Comparable[] pq, int i, int j)
+
+private static void exch(Comparable[] pq, int i, int j)
+
+
