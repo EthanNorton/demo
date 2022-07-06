@@ -1,0 +1,24 @@
+import java.util.Scanner; 
+
+public class AddUpIntegers
+{
+    public static void main (String[] args )
+    {
+        Scanner scan = new SCanner ( System.in );
+        int N, sumAll = 0, sumEven = 0, sumOdd = 0;
+
+        System.out.print("Enter limit value: ");
+        N = scan.nextInt();
+
+        int count = 
+
+        while ( ) 
+        {
+            // insert statements here later
+        } // {should be statement here};
+        
+        System.out.print ( " Sum of all : " + sumAll );
+        System.out.print ( " \tsum of even: " + sumEven );
+        System.out.println ( "\tSum of odd : " + sumOdd );
+    }
+}
