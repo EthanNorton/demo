@@ -1,0 +1,9 @@
+select count(*) from credit;
+select count(*) from person natural join credit;
+select count(*) from movie natural join credit;
+select count(*) from person natural join credit natural join movie;
+select count(*) from person, credit, movie where person,nm=credit.nm and movie.tt=credit.tt;
+
+/* more complex statements
+
+SELECT S
