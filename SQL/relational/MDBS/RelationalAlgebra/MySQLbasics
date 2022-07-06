@@ -6,4 +6,17 @@ select count(*) from person, credit, movie where person,nm=credit.nm and movie.t
 
 /* more complex statements
 
-SELECT S
+SELECT S.id
+FROM Student S
+WHERE NOT EXISTS (
+    -- all CS courses
+    (SELECT C.crsCode
+    FROM Course C
+    WHERE C.crsCode LIKE 'CS%')
+    EXCEPT
+    -- This student's courses
+    ( SELECT R.crsCode
+    FROM Transcript R
+    WHERE R.StudID = S.id) )
+    
+)
