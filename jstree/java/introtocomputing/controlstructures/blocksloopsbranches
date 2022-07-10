@@ -1,0 +1,27 @@
+// practicing some block statements 
+
+while (boolean-expression)
+    statement
+
+while (boolean-expression) {
+    statements
+}
+
+// using the block with the if statement 
+
+if ( boolean-expression )
+    statement
+else
+    statement 
+
+if ( boolean-expression )
+    statement  // this will be a commmon coding example 
+
+// real example
+
+if ( x > y ) {
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+}

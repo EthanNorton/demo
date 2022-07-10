@@ -1,0 +1,65 @@
+// here is the complex API 
+
+In in = new In(args[0]);
+Graph G = new Graph(in);
+
+for ( int  = 0; v < G.V(); v++)
+    for (inw : G.adj(v))
+        StdOut.println( v + "-" + w);
+
+
+// in order to compute the degree of v
+        public static int degree(Graph G, int v)
+        {
+            int degree = 0;
+            for (int w : G.adj(V)) degree++;
+            return degree;
+        }
+
+public static int maxDegree(Graph G)
+{
+    int max = 0;
+    for (int v = 0; v < G.V(); v++)
+        if (degree(G, v) > max)
+            max = degree(G, v);
+    return max;
+}
+
+// compute average degree
+public static double averageDegree(Graph G)
+{   return 2.0 * G.E() / G.V();  }
+
+// count self-loops
+
+public static int numberOfSelfLoops(Graph G)
+{
+    int count = 0;
+    for (int v = 0; v < G.V(); v++)
+        for ( int w : G.adj(v))
+            if ( v == w) count++;
+    return count/2;
+}
+
+//adjacency lists
+private final int V;
+private Bag<integer>[] adj;
+
+// create empty graph with V vertices here
+public graph(int V)
+{
+    this.V = V;
+    adj = (Bag<Integer>[]) new Bag[V];
+    for (int v = 0; v < V; v++)
+        adj[v] = new Bag<Integer>();
+}
+
+//add edges
+
+public void addEdge(int V, int w)
+{
+    adj.[v].add[w];
+    adj[w].add(v);
+}
+
+public Iterable<Integer> adj(int v)
+{   return adj[v];  }

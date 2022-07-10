@@ -1,0 +1,39 @@
+// public void static is the same as def in python 
+
+public void takeOne()
+{   nSticks = nSticks -1;
+    player = 3 - player;
+}
+
+// coding a formal parameter
+
+public void takeSticks ( int num) //this is the parameter
+{   nSticks = nSticks - num;
+    player = 3 - player;
+    
+//this one deals with sticks per player 
+
+public void setSticks( int sticks)
+{   nSticks = sticks;
+}  // set sticks()
+
+public void setGame ( int sticks, int starter)
+{   nSticks = sticks;
+    player = starter;
+} // setGame() 
+
+// this is passing information to an object
+
+// creating an instance and calling an instance below
+
+OneRowNim game = new OneRowNim();
+game.report(); 
+
+public class OneRowNim
+{ private int nSticks = 7;
+  private int player =1
+}
+
+
+
+
