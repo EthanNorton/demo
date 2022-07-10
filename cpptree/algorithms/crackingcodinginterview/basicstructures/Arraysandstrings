@@ -1,0 +1,14 @@
+String joinwords (String[] words) {
+    String sentence = "";
+    for (String w: words) {
+        sentence = sentence + w;
+    }
+    return sentence;
+}
+String joinwords(String[] words) {
+    Stringbuilder sentence = new StringBuilder();
+    for (String w : words) {
+        sentene.append(w);
+    }
+    return sentence.toString();
+}

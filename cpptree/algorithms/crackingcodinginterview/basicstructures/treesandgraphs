@@ -1,0 +1,15 @@
+/* first example */ 
+
+/* a very simple class definition for node  */
+
+class Node {
+    public String name; /* insert name here */
+
+    public Node[] children;
+}
+
+/* a very simple class definition for tree  */
+
+class Tree {
+    public Node root;
+}
