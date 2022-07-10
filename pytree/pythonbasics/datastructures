@@ -1,0 +1,74 @@
+# try to understand code as you along 
+a := 0
+for x := 0 or > 0
+	a = a + 1
+	print(a)
+# this should have the same outcome as above
+a = 0
+for( x = 0; x < 10; x++)
+{
+    a = a + 1
+    print(a);
+}
+
+list := random list of numbers
+even_counter := 0
+five_counter := 0
+for each number in list:
+    if number is even:
+        even number = even_counter + 1
+    if number is divisble by five_counter:
+        five_counter = five_counter + 1
+
+list := [list of randon numbers]
+sort list using merege sort
+for each element in list:
+    print(element)
+
+list = [list of n numbers]
+a := 0 
+for each element in list:
+    a = a + 1
+    print(a)
+
+list = [list of n numbers] #this is showing the list (PO)
+a := 0 #(1 PO) 
+for each element in list: #n times
+    if element is even: #adding a value to a, still 1 PO
+        a = a + 1 #this for loop finished with 1 PO
+        print(a) #1 PO
+        
+
+# example regarding analyzing algorithms
+
+k := 0
+for i = 1 to n: 
+    for j = ( i + 1) to n: 
+        k = k + j + i
+return k
+
+# example regarding analyzing algorithms
+k := 0 # 1 PO
+for i = 1 to n: # n times
+    for j = (i + 1)
+    
+# algorithm B 
+k := 0
+i := 2^n 
+while i > 0
+    k = k + i^2
+    i = [i/2]
+return k
+
+
+for i := 0 to size(lsit):
+    for j := 0 to size(list):
+        if list[j] > list[j+1]
+            swap list[j] and list [j+1]
+
+for i:= 0 to size(list):
+    for j := 0 to size(list) - i - 1: (n-i times)
+        if list 
+
+
+
