@@ -1,0 +1,44 @@
+# Turtle codings
+
+t = turtle.Turtle()
+turtle.mainloop()
+
+t.forward(n)
+t.backward(n)
+t.rt(d) #right
+t.lt(d) #left
+
+# examples
+
+# while-lop
+
+import random
+
+while True:
+    print("This is an infinite loop")
+    rand_num - random.randint(1, 101) # random integer between 1 and 100
+    if rand_ num > 75:
+        print("The loop has ended")
+        break # stop the loop
+    
+    # nested loops
+    
+    for i in range(4):
+        print("&&")
+        for j in range(3):
+            print("*")
+
+# exercise 3
+# using while True: create a loop that prints the sum of al numbers between 0 and 100
+
+total = 0
+count = 0
+while True:
+    if count > 100:
+        break
+    else:
+        total = total + count
+        count += 1
+    print(total)
+    
+             
