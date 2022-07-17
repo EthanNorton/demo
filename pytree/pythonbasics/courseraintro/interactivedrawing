@@ -83,7 +83,74 @@ def draw(canvas):
     ball_pos[0] += vel[0]
     ball_pos[1] += vel[1]
     
-    # collide and 
+    
+## Velocity control 
+
+def draw(canvas):
+# drawing the ball 
+
+    canvas.draw_circle(ball_pos, BALL_RADIUS, 2, "Red", "White")
+
+def keydown(key):
+    vel = 4
+    if key==simplegui.KEY_MAP["left"]:
+        ball_pos[0] -= vel
+    elif key == simplegui.KEY_MAP
+    
+
+#looking at print and availabilities
+
+a = [4,5,6]
+b = list[a]
+
+a[1] = 20
+
+a = b = [1,2,3]
+b[2] = 4
+
+def mutate_part(x):
+    a[1] = x 
+
+def assign_whole(x):
+    a = x 
+
+def assign_whole_global(x):
+    global a
+    a = x 
+
+mutate_part(100)
+
+assign_whole(200)
+
+assign_whole_global(300)
+
+# Programming Tips 4
+
+# tuples are non mutable lists
+# tuple is the same but with paranethsis instead of square brackets
+
+# this illustrates the real differene between tuples and lists
+
+a = [4,5,6]
+a[1] = 100 
+print(a)
+
+b = (4,5,6)
+b[1] = 100 # this will return an error
+print(b)
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     
