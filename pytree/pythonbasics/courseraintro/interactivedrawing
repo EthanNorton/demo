@@ -1,3 +1,6 @@
+from turtle import distance
+
+
 def convert_inits(val, name):
     result = str(val) + " " + name
     if val > 1:
@@ -20,4 +23,78 @@ def convert(val):
         return dollars_string
     else: 
         return dollars_string + " and " +  cents_string
+
+
+# motion
+
+# initalize globals
+
+ width = 600
+ height = 400 
+ ball_radius = 20
+ 
+ init_pos = [width / 2, height /2 ]
+ vel = [0, 3] # pixels per tick
+ time = 0 
+ 
+ # define event handlers
+ def tick():
+     global time
+     time = time + 1
+
+def draw(canvas):
+    # this is a list that holds the ball's position
+    ball_pos = [0, 0]
     
+    ball_pos[0] = init_pos[0] + time + vel[0]
+    ball_pos[1] = init_pos[1] + time + vel[1]
+    
+
+# points and vectors in programming
+
+# point/ point distance
+
+# python list of coordinates
+
+[p[0], p[1], q[0], q[1]]
+
+def dist(p, q):
+    return math.sqrt(p[0] - q[0]) ** 2 + (p[1] - q[1] ** 2)
+
+# move /translate between points by using a vector
+
+p[0] = q[0] - v[0]
+p[1] = q[1] - v[1]
+
+# motion updates 
+
+# left wall 
+p[0] <= r
+p[0]>= width - r
+
+# motion update
+p[0] = p[0] + a * v[0]
+p[1] = p[1] + a * v[1]
+
+# updating the code segment from above
+
+#update ball position
+def draw(canvas):
+    ball_pos[0] += vel[0]
+    ball_pos[1] += vel[1]
+    
+    # collide and 
+
+
+    
+
+
+
+
+    
+    
+    
+
+
+    
+     
